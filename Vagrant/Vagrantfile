@@ -1,0 +1,6 @@
+# Override host locale
+ENV["LC_ALL"] = "en_US.UTF-8"
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "fedora/34-cloud-base"
+end
